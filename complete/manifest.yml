@@ -1,0 +1,12 @@
+---
+applications:
+- name: predix-certification-service
+  memory: 1GB
+  instances: 1
+  host: predix-certification-service
+  path: target/certification-api-0.1.0.jar
+  timeout: 180
+  services:
+    - postgres-certification
+
+    
